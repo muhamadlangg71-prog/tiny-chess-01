@@ -42,7 +42,7 @@ on all test positions). Move generation untouched.
 - Real T3: startpos 8.03 s / 185,344 nodes, legal move (without the
   clock, 1e6 nodes would take ~43 s).
 - Determinism: same position + fresh state → same move, 2 runs.
-- `main.py` (3,369 bytes) decompresses byte-exact to `golf13.py`.
+- `main.py` (3,524 bytes) decompresses byte-exact to `golf13.py`.
 - Smoke test: exits 0 with no env server.
 
 ## Grading
