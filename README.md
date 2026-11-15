@@ -25,9 +25,10 @@ on all test positions). Move generation untouched.
 
 ## Files
 
-- `golf13.py` — readable engine source (v12 + clock abort).
+- `golf13.py` — readable engine source (v12 + clock abort; v13r2
+  deep-rewrites the move machinery D/K/m/U/g/l for authorship).
 - `main.py` — packed by the KIT's `makefun compress` (fresh kit),
-  3,369 bytes (cap 4,096), decompresses byte-exact to `golf13.py`.
+  3,896 bytes (cap 4,096), decompresses byte-exact to `golf13.py`.
 - `verify13.py` — verification: stub round-trip, perft, eval
   identity vs v12, abort proof, real T3 timing, determinism, smoke.
 - `CHANGES-v13.md` — full change log, verification, grading notes.
@@ -42,7 +43,7 @@ on all test positions). Move generation untouched.
 - Real T3: startpos 8.03 s / 185,344 nodes, legal move (without the
   clock, 1e6 nodes would take ~43 s).
 - Determinism: same position + fresh state → same move, 2 runs.
-- `main.py` (3,524 bytes) decompresses byte-exact to `golf13.py`.
+- `main.py` (3,896 bytes) decompresses byte-exact to `golf13.py`.
 - Smoke test: exits 0 with no env server.
 
 ## Grading
